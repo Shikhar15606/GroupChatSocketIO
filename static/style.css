@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-attachment: fixed;
+    background: url('./planet.jpg');
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.logo{
+    display: block;
+    margin: auto;
+    height: 8vw;
+    width: 8vw;
+    margin: auto;
+}
+h1{
+    display: block;
+    margin: auto;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: vw;
+}
+.container{
+    width: 80vw;
+    background-color: transparent;
+    margin: auto;
+    height: 60vh;
+    margin-top: 5vh;
+    overflow-y: auto;
+}
+.message{
+    background-color: grey;
+    padding: 10px;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin: 10px;
+    font-weight: 500;
+}
+.left{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    float: left;
+    clear: both;
+}
+.right{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 15px;
+    float:right;
+    clear: both;
+}
+#send-container{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 80vw;
+}
+#messageInp{
+    display: inline-block;
+    margin-top: 0px;
+    width: 60vw;
+    height: 50px;
+    background: transparent;
+    /* border-radius: 15px; */
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    /* padding: 10px; */
+    font-weight: 400;
+    background-color: black;
+    opacity: 0.7;
+}
+#messageInp:focus{
+    outline: none;
+}
+.btn{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    margin-left: 5vw;
+}
+#send{
+    margin-top: 20px;
+    background-color: green;
+    border-radius: 50%;
+}
+#send:hover{
+    cursor: pointer;
+}
+@media(max-width:768px)
+{
+    .logo{
+        width: 22vw;
+        height: 22vw;
+    }
+    #send-container{
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 100vw;
+    }
+    .container{
+        width: 100vw;
+    }
+    .btn{
+        margin-left: 0vw;
+    }
+    #messageInp{
+        width: 80vw;
+    }
+    #send-container{
+        width: 100vw;
+    }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
