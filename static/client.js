@@ -1,17 +1,21 @@
-const socket = io('http://localhost:8000');
-
+const socket = io();
 const form = document.getElementById('send-container');
 const messageInput = document.getElementById('messageInp');
 const messageContainer = document.querySelector(".container")
-const audio = new Audio('https://cdnjs.cloudflare.com/ajax/libs/ion-sound/3.0.7/js/ion.sound.min.js');
+// const audio = new Audio('static/ting.mp3');
 const append = (message,position) =>{
     const messageElement = document.createElement('div');
     messageElement.innerText = message;
     messageElement.classList.add('message');
     messageElement.classList.add(position);
     messageContainer.append(messageElement);
-    if(position=='left')
-    audio.play();
+    if(position =='left')
+    {
+
+        document.getElementById("my_audio").loop=false
+        document.getElementById("my_audio").autoplay=false
+        document.getElementById("my_audio").play()
+    }
 }
 
 form.addEventListener('submit',e =>{

@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "howler": "^2.2.0",
     "nodemon": "^2.0.4",
     "path": "^0.12.7",
     "pug": "^3.0.0",
