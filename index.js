@@ -9,6 +9,9 @@ const io = socketio(server);
 
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')) // For serving static files
+//        url        on which this folder  is hosted
+// this is necessary as a server do not take image sound css or javascript files from a folder
+// it takes all these files from a server on which these files are hosted
 app.use(express.urlencoded())
 
 // PUG SPECIFIC STUFF
